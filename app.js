@@ -15,6 +15,8 @@ app.use(function(req, res, next) {
   next(); 
 });
 
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/mean-hotel');
+
 // Set static directory before defining routes
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
