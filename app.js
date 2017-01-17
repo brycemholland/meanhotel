@@ -4,6 +4,8 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+
 var routes = require('./api/routes');
 
 // Define the port to run on
