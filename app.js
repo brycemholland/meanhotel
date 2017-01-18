@@ -30,7 +30,7 @@ mongoose.createConnection(uristring, function (err, res) {
 });
 
 // Define the port to run on
-app.set('port', 3030);
+//app.set('port', 3030);
 
 // Add middleware to console log every request
 app.use(function(req, res, next) {
