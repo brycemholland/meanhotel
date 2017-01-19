@@ -4,11 +4,11 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 
 var routes = require('./api/routes');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mean-hotel');
+//mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mean-hotel');
 
 // Define the port to run on
 app.set('port', 3030);
