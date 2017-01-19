@@ -4,11 +4,7 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 
-//var mongoose = require('mongoose');
-
 var routes = require('./api/routes');
-
-//mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mean-hotel');
 
 // Define the port to run on
 app.set('port', 3030);
@@ -31,7 +27,7 @@ app.use(bodyParser.json());
 app.use('/api', routes);
 
 // Listen for requests
-var server = app.listen(app.get('port'), function() {
+var server = app.listen(process.env.PORT || app.get('port'), function() {
   var port = server.address().port;
   console.log('Magic happens on port ' + port);
 });
