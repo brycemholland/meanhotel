@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dburl = 'mongodb://localhost:27017/meanhotel';
+var dburl = process.env.MONGODB_URI || 'mongodb://localhost:27017/meanhotel';
 var retry = null;
 mongoose.connect(dburl);
 

@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var dburl = MONGODB_URI; //'mongodb://localhost:27017/meanhotel';
+var dburl = 'mongodb://localhost:27017/meanhotel';
 
 var _connection = null;
 
